@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="DaNang.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <title>Đà Nẵng</title>
+</head>
+
+<body data-target=".navbar" data-offset="10">
+    <div><iframe width="100%" height="500" src="https://www.youtube.com/embed/Au6LqK1UH8g?autoplay=1&start=6"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <ul class="nav">
+            <li class="nav-item">
+                <a onclick="overview()" id="nav1" class="nav-link active navremove" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="gallery()" id="nav2" class="nav-link navremove" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="alsolike()" id="nav3" class="nav-link navremove" href="#">You may also like</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="nearplace()" id="nav4" class="nav-link navremove" href="#" tabindex="-1"
+                    aria-disabled="true">Nearby
+                    places</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="overview">
+        <div class="icon">
+            <div><span>Itineraries</span><a href="#itineraries"><i class="fas fa-map-marker-alt"></i></a></div>
+            <div><span>When to go</span><a href="#climate"><i class="far fa-calendar-alt"></i></a></div>
+            <div><span>How to get there</span><a href="#transport"><i class="fas fa-map-signs"></i></a></div>
+        </div>
+        <div class="desc">
+            <h4>With broad beaches, fantastic street food, the fabled Hai Van Pass,and a growing
+                collection of cafes, restaurants, and bars, it’s no wonder the residents of Da Nang sport
+                some of the broadest smiles in the country.Da Nang is a true beach city. The warm
+                sands of My Khe Beach sweep south from the mountainous Son Tra Peninsula. Da Nang hosts
+                some of Vietnam's top luxury resorts, but much of the beach still belongs to the people
+                who make it their playground, gym, and source of livelihood.</h4>
+            <div><img src="https://vietnam.travel/sites/default/files/360Tour/MarbleMountain/socialThumbnail2.jpg"
+                    alt=""></div>
+            <hr />
+            <h4 style="color:goldenrod; text-align: center; margin-top: 30px;"><strong>TOP THINGS TO DO IN DA
+                    NANG:</strong></h4>
+
+            <h5><strong>Enjoy the beach</strong></h5>
+
+            <p>In the early morning there is a palpable sense of positive energy in Da Nang. It’s impossible
+                not to feel the buzz of Da Nang life and be swept along with it, so be sure to set the alarm
+                clock early at least once on your stay. Along the shore, fishermen sell the day’s
+                catch,&nbsp;football and volleyball matches spring up all around, and people jog, stroll or
+                simply relax as the morning breeze kicks up and waves wash the sands.</p>
+
+            <h5><strong>See the Son Tra Peninsula</strong></h5>
+
+            <p>The <strong>Son Tra Peninsula </strong>strikes out into the ocean, its densely forested
+                hillsides are home to rhesus macaques, long-tailed macaques, pygmy lorises, and the
+                endangered <strong>red shanked douc langur</strong>&nbsp;-- one of the world’s most striking
+                primates. Grab some binoculars, hire a motorbike, and head out for a day of wildlife
+                spotting.</p>
+
+            <h5><strong>Learn about Cham culture</strong></h5>
+
+            <p>A couple of hours outside of Da Nang lies <strong>My Son Sanctuary</strong>, a
+                UNESCO-listed complex of abandoned temples dating from the 4th to the 14th century. Hidden
+                among the jungle, some towers are overgrown and many are in ruin, but enough
+                remains to whisk you back in time. To learn more about Cham culture, visit the superb
+                <strong>Cham Museum of Sculpture</strong> in Da Nang, home to the largest collection of Cham
+                sculpture in the world.</p>
+
+            <h5><strong>Dine on street food </strong></h5>
+
+            <p>Da Nang is a dream destination for foodies, with scores of seafront eateries serving every
+                night of the week. <strong>Banh mi</strong>—the Vietnamese baguette—is taken to a new level
+                here. <strong>Mi Quang</strong> is another delight and every Da Nang local will offer an
+                opinion on where to find the best. Each bowl&nbsp;features yellow rice noodles, pork,
+                shrimp, and a flavour-infused broth topped off with chopped peanuts, quail&nbsp;eggs and
+                plenty of fresh herbs.</p>
+
+            <h5><strong>Plan a daytrip</strong></h5>
+
+            <p><strong>Marble Mountains</strong>, a collection of five outcrops topped with atmospheric
+                pagodas, is a rewarding daytrip from Da Nang.&nbsp;Not far away,&nbsp;<strong>Ba Na
+                    Hills</strong>&nbsp;has made a comeback in recent years thanks to a record-breaking
+                5km&nbsp;<strong>cable car</strong>&nbsp;that rises almost 1,300m from sea level. The view
+                across the mountain and jungles from the cable car is spectacular, but the fun begins at the
+                top with an alpine coaster, funicular railway, 18-hole golf course and more.&nbsp;</p>
+            <h5><strong>>Drive the Hai Van Pass</strong></h5>
+
+            <p><strong>Hai Van Pass </strong>is one of the&nbsp;finest stretches of coastal road anywhere in
+                Vietnam. Climbing for 9km out of Danang, you'll be rewarded by views&nbsp;of deserted
+                beaches and&nbsp;jungle-clad slopes. The descent on the other side leads to the <strong>Lang
+                    Co </strong>lagoon, where floating restaurants will be happy to serve you a fresh
+                seafood lunch.</p>
+        </div>
+
+        <div class="desc" id="itineraries">
+            <h5 class="title">Da Nang Itineraries</h5><i class="fas fa-caret-down"></i>
+            <h4><strong>24 hours in Da Nang</strong></h4>
+
+            <p>Rise early and enjoy the buzz of <strong>My Khe beach</strong> before a ride out onto
+                the<strong> Son Tra Peninsula </strong>in search of primates. Escape the afternoon sun at
+                the <strong>Museum of Cham Sculpture</strong> then head for a sundowner at <strong>Sky
+                    36.</strong></p>
+
+            <h4><strong>48 hours in Da Nang</strong></h4>
+
+            <p>With an extra 24 hours choose from a cultural visit&nbsp;to the UNESCO-listed <strong>My Son
+                    Sanctuary,</strong> a road trip over the stunning <strong>Hai Van Pass</strong> coastal
+                road, or a ride in a record breaking 5km long cable car up to the fantasy theme park of
+                <strong>Ba Na Hills</strong>.</p>
+        </div>
+
+        <div class="desc" id="climate">
+            <h5 class="title">Da Nang Weather</h5><i class="fas fa-caret-down"></i>
+            <p>Danang is a great destination nearly year round. The best months to visit are from
+                <strong>March to May </strong>and <strong>September to October,</strong> when the weather is
+                warm and crowds minimal. June - August is prime time for local tourists; it’s very hot then
+                but very little rain and the sea is clear and calm.&nbsp;</p>
+        </div>
+
+        <div class="desc" id="transport">
+            <h5 class="title">
+                Transport to Da Nang
+            </h5><i class="fas fa-caret-down"></i>
+            <p>The Danang International Airport has a number of daily connections from Ho Chi Minh City and
+                Hanoi, as well as other major cities in Vietnam. There are also a growing number of
+                international connecting <strong>flights </strong>from Hong Kong, Cambodia, South Korea,
+                Japan, China, Bangkok, and Singapore.</p>
+        </div>
+
+
+        <hr />
+    </div>
+    <div id="gallery">
+        <h4 style="color:goldenrod; text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 35px;">
+            <strong>GALLERY</strong></h4>
+        <div class="backgr-gal">
+            <div style="background-color:rgb(255, 255, 255, 0.7); padding-bottom: 50px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="img50">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2017-11/danang%20vietnam%20travel%20guide_0.jpg?itok=XPyNbChB"
+                                    alt="">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2017-11/things%20to%20do%20in%20danang_0.jpg?itok=HkM4wnTF"
+                                    alt="">
+                            </div>
+                            <div class="img100">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2017-11/things%20to%20do%20in%20danang%20vietnam-10_0.jpg?itok=gjatztiK"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div><img style="height: 400px; width: 100%;"
+                                    src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2018-11/Da%20Nang%20Travel%20Guide%20Vietnam%20Tourism_.jpg?itok=BMB4Z0PV"
+                                    alt=""></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img100">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2017-11/Danang%20guide%20vietnam%20tourism_0.jpg?itok=RWXmsdWa"
+                                    alt="">
+                            </div>
+                            <div class="img50">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2018-11/Danang%20Travel%20-%20Vietnam%20Tourism.jpg?itok=7QkY1_CH"
+                                    alt="">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2017-11/things%20to%20do%20in%20danang%20vietnam-4_0.jpg?itok=zuzG3r9q"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="img50">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2018-11/Da%20Nang%20Travel%20Guide%20Vietnam%20Tourism_-5.jpg?itok=RDrly1K5"
+                                    alt="">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2018-11/Da%20Nang%20Travel%20Guide%20Vietnam%20Tourism_-4.jpg?itok=Fnu_mvRd"
+                                    alt="">
+                            </div>
+                            <div class="img100">
+                                <img src="https://vietnam.travel/sites/default/files/styles/article_photo_large/public/2018-11/Da%20Nang%20Travel%20Guide%20Vietnam%20Tourism_-2.jpg?itok=tShxHNk3"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div><img style="height: 400px; width: 100%;"
+                                    src="https://www.luxstay.com/blog/wp-content/uploads/2020/02/du-lich-trong-nuoc-3.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img100">
+                                <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/07/kinh-nghiem-san-ve-may-bay-di-chu-lai-gia-re-trong-mua-du-lich-cao-diem-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="img50">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSr2JCbCaQViquaOdPmXKNAKM2taoqOsOunRA&usqp=CAU"
+                                    alt="">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQl1vEb33DQNZ75elvg9vU_3v0Lpq-DV4G3xg&usqp=CAU"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="also-like">
+        <h4 style="color:goldenrod; text-align: center; padding-top: 40px; margin-bottom: 30px; font-size: 35px;">
+            <strong>YOU MAY ALSO LIKE</strong></h4>
+        <div class="row" style="margin-right: 20px; margin-left: 20px; ">
+            <div class="col-4" style="padding: 0px;">
+                <div>
+                    <a href=""><img style="width: 100%;"
+                            src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="col-4" style="padding: 0px;">
+                <div>
+                    <a href=""><img style="width: 100%;"
+                            src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="col-4" style="padding: 0px;">
+                <div>
+                    <a href=""><img style="width: 100%;"
+                            src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="read-more">
+        <div>
+            <h2>Nearby places</h2>
+            <div class="container" style="margin-bottom: 60px; ;">
+                <div class="row">
+                    <div class="col-4 img-read">
+                        <div class="box-text"><a href="../hanoi/hanoi.html"><img
+                                    src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty"
+                                    alt="" style="width: 100%; height: 360px;"></a>
+                            <div class="rm-text">
+                                <p>Ha noi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 img-read">
+                        <div class="box-text"><a href="../danang/DaNang.html"><img
+                                    src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/danang%20travel%20guide.jpg?itok=BnNpkujX"
+                                    alt="" style="width: 100%; height: 360px;"></a>
+                            <div class="rm-text">
+                                <p>da nang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 img-read">
+                        <div class="box-text"><a href="../hochiminh/hochiminhcity.html"><img
+                                    src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-07/vietnam-tourism-4.jpg?itok=pn9rKMK7"
+                                    alt="" style="width: 100%; height: 360px;"></a>
+                            <div class="rm-text">
+                                <p>ho chi minh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col1">
+                    <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                    <p>Receive new travel stories from Vietnam once a month in your inbox.
+                    </p>
+                    <input type="email" placeholder="your email">
+                    <button>sign up</button>
+                </div>
+                <div class="col-4 col2">
+                    <h4>USEFUL LINKS</h4>
+                    <ol>
+                        <li>Stay at Home Kit</li>
+                        <li>Visas for Vietnam</li>
+                        <li>Beginner Guide</li>
+                        <li>FAQs</li>
+                        <li>Sitemap</li>
+                        <li>News & Media</li>
+                        <li>Industry Resources</li>
+
+                    </ol>
+                </div>
+                <div class="col-4 col3">
+                    <h4>FOLLOW US ON</h4>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <p>Welcome to the official website of Vietnam National Administration of Tourism. Visit our social
+                        media pages for more travel inspiration.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="danang.js"></script>
+
+</body>
+
+</html>

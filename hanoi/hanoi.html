@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="hanoi.css">
+    <title>HaNOi</title>
+
+</head>
+<style>
+    /* Make the image fully responsive */
+    /* .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    } */
+</style>
+
+<body data-target=".navbar" data-offset="10">
+    <div><iframe width="100%" height="500" src="https://www.youtube.com/embed/Au6LqK1UH8g?autoplay=&start=6"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <ul class="nav">
+            <li class="nav-item">
+                <a onclick="overview()" id="nav1" class="nav-link active navremove" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="gallery()" id="nav2" class="nav-link navremove" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="alsolike()" id="nav3" class="nav-link navremove" href="#">You may also like</a>
+            </li>
+            <li class="nav-item">
+                <a onclick="nearplace()" id="nav4" class="nav-link navremove" href="#" tabindex="-1"
+                    aria-disabled="true">Nearby
+                    places</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="overview">
+        <div class="icon">
+            <div><span>Itineraries</span><a href="#itineraries"><i class="fas fa-map-marker-alt"></i></a></div>
+            <div><span>When to go</span><a href="#climate"><i class="far fa-calendar-alt"></i></a></div>
+            <div><span>How to get there</span><a href="#transport"><i class="fas fa-map-signs"></i></a></div>
+        </div>
+        <div class="desc">
+            <h4>Founded over 1000 years ago, Vietnam’s capital city is rich in history, with
+                the streets of its rambling Old Quarter dating back to the 14th century.
+                Wandering these tree-lined lanes past crumbling colonial facades
+                will&nbsp;transport you back in time. However, today's Hanoi is about much
+                more than the past. The ancient city is being invigorated with modern cafes,
+                world-class restaurants, and cool art galleries. When the sun goes down, you
+                have your pick of watering holes, from sophisticated rooftop bars to buzzing
+                <em>bia hoi</em>.</h4>
+            <div><img src="https://vietnam.travel/sites/default/files/360Tour/HaNoi/socialThumbnail2.jpg" alt=""></div>
+            <hr />
+            <h4 style="color:goldenrod; text-align: center; margin-top: 30px;"><strong>TOP THINGS TO DO IN
+                    HANOI:</strong></h4>
+
+            <h5><strong>Sample the street food</strong></h5>
+
+            <p>A wander around a morning market provides a tantalising hint of what you can
+                expect to hit your table in Hanoi. For an&nbsp;authentic taste&nbsp;of
+                Hanoi, look no further than the street kitchens of the <strong>Old
+                    Quarter</strong>. <em>Phở</em> noodle soup is king of cuisines here,
+                with steaming pots of its star anise-infused broth simmering on every
+                corner; while&nbsp;every day, the irresistible scent of <em>bún chả
+                </em>fills the air as barbecued pork sizzles over hot coals. In recent
+                years&nbsp;a growing band of superb international dining rooms have emerged,
+                serving everything from contemporary tapas&nbsp;to fusion fare.</p>
+
+            <h5><strong>Stroll the Old Quarter </strong></h5>
+
+            <p>Hanoi’s <strong>Old Quarter</strong> serves up a sensory overload for the
+                eyes, ears and nose. Wisps of incense drift out onto streets from ancient
+                temples painted a riot of reds and oranges, while in a far-flung corner the
+                clang of a blacksmith’s hammer mingles with a mobile fruit seller’s call. To
+                fully immerse yourself, grab a map to explore. Or jump in a cyclo and take a
+                tour of this intoxicating maze of markets, street kitchens, shop houses, and
+                more.</p>
+
+            <h5><strong>Explore Hanoi's cafe culture</strong></h5>
+
+            <p>It is by taking a seat and waiting as your coffee slowly filters that the
+                Vietnamese capital can best be understood. Fast-paced on the surface, the
+                true rhythm of city life is far from hurried. Alongside the thousands of
+                coffee houses selling traditional Vietnamese coffee, an ever-growing band of
+                unique coffee shops serve espressos and macchiatos in surroundings rivaling
+                the world’s coolest caffeine dens.</p>
+
+            <h5><strong>Check out the art scene</strong></h5>
+
+            <p>Hanoi has long had a reputation as Vietnam’s art capital, with the elegant
+                <strong>Fine Arts Museum </strong>housing the country’s foremost collection,
+                including&nbsp;ancient Cham artifacts and&nbsp;impressionist pieces. For
+                something more contemporary, head for <strong>Manzi</strong>--an art
+                space-cum-cafe--or the <strong>Vietnam Art Gallery</strong>. Both are top
+                places to take the pulse of the city’s art scene. Smaller gallery spaces
+                include <strong>Nha San Collective</strong> at the up-and-coming
+                <strong>Hanoi Creative City </strong>urban project.</p>
+
+            <h5><strong>Join the locals at Hoan Kiem Lake</strong></h5>
+
+            <p><strong>Hoan Kiem lake</strong> rests at the heart of Hanoi and embodies the
+                soul of the city. Every morning it comes alive with walkers, aerobics
+                classes, badminton, ballroom dancers, and even a laughing yoga group. It
+                bursts back into life at sunset, and after dark, is again thronged with
+                locals out to take the evening air.&nbsp;A little further north the
+                lesser-visited<strong> Truc Bach</strong> and <strong>West Lake</strong>
+                shouldn’t be missed--their calm temples and lakeside cafes provide peaceful
+                enclaves away from the buzz of downtown.</p>
+        </div>
+
+        <div class="desc" id="itineraries">
+            <h5 class="title">Ha Noi Itineraries</h5><i class="fas fa-caret-down"></i>
+            <h4><strong>24 hours in Hanoi</strong></h4>
+
+            <p>Begin your day early with a wander around <strong>Hoan Kiem</strong> and soak
+                up the invigorating rhythm of life, with everything from open air aerobics
+                to laughing yoga ringing across the waters. After a breakfast <em>phở,</em>
+                wander the streets of the<strong> Old Quarter</strong> before sampling the
+                capital’s staple lunch dish, <em>bún chả</em>. Visit the <strong>Women’s
+                    Museum</strong> in the afternoon, then head to <strong>Summit
+                    Lounge</strong> for the best sunset views in town before crowning the
+                day with dinner at <strong>Chim Sao</strong>.</p>
+
+            <h4><strong>48 hours in Hanoi</strong></h4>
+
+            <p>Plan an early morning visit to <strong>Cong Vien Thong Nhat</strong>, then
+                head to the <strong>Museum of Fine Arts</strong>&nbsp;before refreshing
+                with&nbsp;a drink at <strong>Manzi</strong>, for a rewarding morning of
+                artistic exploration. In the afternoon go temple-hopping around <strong>West
+                    Lake</strong>, stopping at some of the many coffee and juice bars that
+                surround it. For a Vietnamese dinner, dine at <strong>Nha
+                    Hang&nbsp;Ngon</strong>. Round out your 48 hours with a nightcap at
+                Hanoi’s coolest bar, <strong>Tadioto.</strong></p>
+        </div>
+
+        <div class="desc" id="climate">
+            <h5 class="title">Ha Noi Weather</h5><i class="fas fa-caret-down"></i>
+            <p>The climate is inviting from <strong>April to June</strong>, but Hanoi is
+                particularly beautiful in May when its many trees come into bloom – orange,
+                white, purple and red flowers elevate the already beguiling street scenes to
+                another level.<strong> October and November</strong> are also excellent
+                months to visit when temperatures are cooler.</p>
+        </div>
+
+        <div class="desc" id="transport">
+            <h5 class="title">
+                Transport to Ha Noi
+            </h5><i class="fas fa-caret-down"></i>
+            <p>Hanoi is served by Noi Bai international airport as well as
+                <strong>trains.</strong> A <strong>bus network </strong>links all major
+                destinations within the country and international buses also link the
+                capital with Laos.</p>
+        </div>
+
+
+        <hr />
+    </div>
+    <div id="gallery">
+        <h4 style="color:goldenrod; text-align: center; margin-top: 30px; margin-bottom: 30px; font-size: 35px;">
+            <strong>GALLERY</strong></h4>
+        <div class="backgr-gal">
+            <div style="background-color:rgb(255, 255, 255, 0.7); padding-bottom: 50px;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="img50">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-3.jpg?itok=jAPI5qNf"
+                                    alt="">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-14.jpg?itok=2rvwpxrc"
+                                    alt="">
+                            </div>
+                            <div class="img100">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-7.jpg?itok=oJR0t-1w"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div><img style="height: 400px; width: 100%;"
+                                    src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-13.jpg?itok=-Bsp0zLG"
+                                    alt=""></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img100">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-2.jpg?itok=BBvqcbEL"
+                                    alt="">
+                            </div>
+                            <div class="img50">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi.jpg?itok=eX0SEY4s"
+                                    alt="">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-12.jpg?itok=UTQAEhD6"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="img50">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-6.jpg?itok=k_tSz4EQ"
+                                    alt="">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-4.jpg?itok=Epni2F4f"
+                                    alt="">
+                            </div>
+                            <div class="img100">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-5.jpg?itok=N64c2OdA"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div><img style="height: 400px; width: 100%;"
+                                    src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-11.jpg?itok=bHJny9yq"
+                                    alt=""></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img100">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-2.jpg?itok=BBvqcbEL"
+                                    alt="">
+                            </div>
+                            <div class="img50">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/things%20to%20do%20in%20hanoi-9.jpg?itok=Hs_t_5qM"
+                                    alt="">
+                                <img src="https://www.vietnam.travel/sites/default/files/styles/article_photo_large/public/2019-10/hanoi%20pho%20vietnam%20tourism.jpg?itok=-UMyFzlJ"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="also-like">
+        <h4 style="color:goldenrod; text-align: center; padding-top: 40px; margin-bottom: 30px; font-size: 35px;">
+            <strong>YOU MAY ALSO LIKE</strong></h4>
+        <div class="row" style="margin-right: 20px; margin-left: 20px; ">
+            <div class="col-4" style="padding: 0px;">
+                <div>
+                    <a href=""><img style="width: 100%;" src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
+                        alt=""></a>
+                </div>
+            </div>
+            <div class="col-4" style="padding: 0px;">
+                <div>
+                    <a href=""><img style="width: 100%;" src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
+                        alt=""></a>
+                </div>
+            </div>
+            <div class="col-4" style="padding: 0px;">
+                <div>
+                    <a href=""><img style="width: 100%;" src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
+                        alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="read-more">
+        <div>
+            <h2>Nearby places</h2>
+            <div class="container" style="margin-bottom: 60px; ;">
+                <div class="row">
+                    <div class="col-4 img-read">
+                        <div class="box-text"><a href="hanoi.html"><img
+                            src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty"
+                            alt="" style="width: 100%; height: 360px;"></a>
+                            <div class="rm-text">
+                                <p>Ha noi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 img-read">
+                        <div class="box-text"><a href="../danang/DaNang.html"><img
+                            src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/danang%20travel%20guide.jpg?itok=BnNpkujX"
+                            alt="" style="width: 100%; height: 360px;"></a>
+                            <div class="rm-text">
+                                <p>da nang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 img-read">
+                        <div class="box-text"><a href="../hochiminh/hochiminhcity.html"><img
+                            src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-07/vietnam-tourism-4.jpg?itok=pn9rKMK7"
+                            alt="" style="width: 100%; height: 360px;"></a>
+                            <div class="rm-text">
+                                <p>ho chi minh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col1">
+                    <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                    <p>Receive new travel stories from Vietnam once a month in your inbox.
+                    </p>
+                    <input type="email" placeholder="your email">
+                    <button>sign up</button>
+                </div>
+                <div class="col-4 col2">
+                    <h4>USEFUL LINKS</h4>
+                    <ol>
+                        <li>Stay at Home Kit</li>
+                        <li>Visas for Vietnam</li>
+                        <li>Beginner Guide</li>
+                        <li>FAQs</li>
+                        <li>Sitemap</li>
+                        <li>News & Media</li>
+                        <li>Industry Resources</li>
+
+                    </ol>
+                </div>
+                <div class="col-4 col3">
+                    <h4>FOLLOW US ON</h4>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <p>Welcome to the official website of Vietnam National Administration of Tourism. Visit our social
+                        media pages for more travel inspiration.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="hanoi.js"></script>
+
+</body>
+
+</html>

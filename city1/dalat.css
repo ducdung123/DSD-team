@@ -1,0 +1,178 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+}
+#img{
+    position: relative;
+}
+#text-img{
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 90px;
+    color: white;
+}
+#content{
+    width: 60%;
+    margin: 50px auto 0px auto;
+}
+#icon{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+#icon i{
+    color: #b2910e;
+    font-size: 22px;
+    margin-right: 5px;
+}
+#content img{
+    width: 100%;
+}
+#content h2{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    opacity: 0.6;
+}
+#content h3{
+    color: #a2140d;
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+#content p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+#read-more{
+    background-image: url("https://vietnam.travel/themes/custom/vietnamtourism/images/bg-red-pattern.png");
+    
+    /* height: 600px; */
+    width: 100%;
+    padding: 10px;
+}
+#read-more>div{
+    /* margin: 10px; */
+    /* margin-top: 20px; */
+    border: 2px solid #f3b502;
+    
+}
+#read-more div h2{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/* #read-more .img-read{
+    padding: 0px;} */
+
+footer{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+/* footer */
+.col1{
+    text-align: left;
+}
+.col1 h4{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col1 p{
+    color: #bc9401;
+    font-size: 15px;
+}
+.col1 input{
+    padding: 5px;
+    width: 100%;
+    display: block;
+    color: #bc9401;
+}
+.col1 button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: #c2271f;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.col2{
+    text-align: center;
+}
+.col2 h4{
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col2 li{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.col3{
+    text-align: left;
+}
+.col3 h4{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col3 i{
+    font-size: 28px;
+    margin-right: 5px;
+    color: #bc9401;
+}
+.col3 p{
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 14px;
+    color: #bc9401;
+}
+footer .container{
+    border-top: 1px solid #c2271f;
+    padding-top: 20px;
+    border-bottom: 1px solid #c2271f;
+}
+/* hieu ung read more */
+#read-more div div div div img{
+    transition: 1s;
+}
+#read-more div div div div:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#read-more>div>div>div>div{
+    padding: 0px !important;
+}
+#read-more div div div div div{
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-right: 5px; */
+    /* transform: scale(1.5);*/
+    overflow: hidden; 
+    /* padding: 5px; */
+}
+
+@media screen and (max-width:800px) {
+    .left, .main, .right {
+    width:100%;
+}
+}

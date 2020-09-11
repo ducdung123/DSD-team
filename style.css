@@ -1,0 +1,537 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#divheader{
+    background-image: url(https://chuyenbatam.com/uploads/news/nhung-buc-anh-thien-nhien-tuyet-dep-trai-dai-khap-3-mien-viet-nam201976102745.jpg);
+    height: 797px;
+    /* height: auto; */
+    width: 100%;
+   background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* z-index: 1; */
+    /* display: fixed; */
+    /* position: relative; */
+}
+#logo{
+    margin-left: 30px;
+    width: 100%;
+    height: 110px;
+}
+div{
+    /* border: 1px solid black; */
+}
+#place{
+    position: relative;
+    text-align: center;
+}
+.placepic1{
+    top: 65px;
+    left: -500px;
+}
+.placepic2{
+    top: 65px;
+    left: -245px;
+}
+#placepic{
+    /* top: 65px; */
+    position: absolute;
+    /* left: -245px; */
+    display: none;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 10px;
+    /* z-index: 2; */
+    border-bottom: #a2140d 4px solid;
+    color: #a2140d;
+}
+header{
+    background-color: rgb(0, 0, 0, 0.5);
+    /* display: fixed; */
+    /* pdin-top: 10px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+#place:hover #placepic{
+    display: block;
+    width: 1000px;
+    /* transition: 0.6s; */
+}
+#thing{
+    position: relative;
+    text-align: center;
+}
+.thingpic1{
+    left: -680px;
+}
+.thingpic2{
+    left: -420px;
+}
+#thingpic{
+    top: 65px;
+    position: absolute;
+    /* left: -420px; */
+    display: none;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 10px;
+    /* z-index: 2; */
+    border-bottom: #a2140d 4px solid;
+    color: #a2140d;
+    /* transition: 0.8s; */
+}
+#thing:hover #thingpic{
+    display: block;
+    width: 1000px;
+    /* transition: 2s !important; */
+}
+#gallery{
+    text-align: center;
+}
+#down{
+    display: none;
+}
+#place:hover #down{
+    display: inline-block;
+    margin-left: 10px;
+    /* transition: 0.6s; */
+}
+#thing:hover #down{
+    display: inline-block;
+    margin-left: 10px;
+    /* transition: 0.8s; */
+}
+#icon{
+    display: inline-block;
+    margin-right: 10px;
+}
+#container-place{
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 30px ;
+}
+#container-place h2 ,h4{
+    text-align: center;
+    
+}
+#container-place h2{
+    color: #b2910e;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+.contentpic{
+    position: relative;
+    padding:0px !important;
+}
+.contentpic div{
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    width: 0px;
+    /* right: 0px; */
+    /* right: 0px;
+    top: 0px; */
+    /* left: 16px; */
+    /* right: 150px; */
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8) ;
+    text-align: center;
+    height: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    /* opacity: 0.8; */
+    font-weight: bold;
+    transition: 0.3s;
+}
+.contentpic:hover div{
+    width: 100%;
+    transition:  0.5s;
+    /* transition-timing-function: ease; */
+}
+.sparate{
+    height: 2px;
+    background-color: #a2140d;
+    width: 50%;
+    margin: 0px auto;
+}
+.ctn-content{
+    margin: 30px auto;
+}
+#placetogo{
+    background-color: #ddd;
+    /* background-image: url(placebackground.jpg); */
+    /* background-repeat: no-repeat; 
+    background-size: contain; */
+    /* height: 100%; */
+    
+}
+#thing-nav{
+    width: 65%;
+    margin: 0px auto;
+}
+#thing-nav div{
+    border: 1px solid #c2271f;
+    margin-right: 20px;
+    /* padding: 10px; */
+    /* color: black; */
+    border-radius: 8px;
+    transition: 0.4s;
+}
+#thing-nav .active{
+    background-color: #c2271f;
+    color: white;
+}
+#thing-nav div:hover{
+    background-color: #c2271f;
+    color: white;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.add-click{
+    background-color: #c2271f;
+    color: white;
+}
+.remove-click{
+    color: black;
+}
+#search{
+    color: #199bb0;
+    border: #199bb0 solid 1px;
+    height: 30px;
+    
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    margin-right: 5px;
+    
+}
+#search:hover{
+    color: white;
+    background-color: #199bb0;
+    
+}
+#thing-content{
+    
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 0px auto;
+    margin-top: 30px;
+}
+#thing-to-do h2{
+    text-align: center;
+    color: #b2910e;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+#thing-to-do{
+    /* background-image: url(placebackground.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; */
+    margin-bottom: 80px;
+}
+#gal img{
+    width: 100%;
+    height: 200px;
+}
+#gal div{
+    padding: 0px;
+    /* padding: 2px; */
+}
+#travel-tip h2{
+    text-align: center;
+    color: #b2910e;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-top: 50px;
+}
+#travel-tip > p{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 50px;
+}
+#travel-tip .col-lg-2,.col-4 {
+    text-align: center;
+}
+#travel-tip .col-lg-2,.col-4 p{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+.i-search1{
+    display: block;   
+}
+.i-search2{
+    display: none;
+}
+footer{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.col1{
+    text-align: left;
+}
+.col1 h4{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col1 p{
+    color: #bc9401;
+    font-size: 15px;
+}
+.col1 input{
+    padding: 5px;
+    width: 100%;
+    display: block;
+    color: #bc9401;
+}
+.col1 button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: #c2271f;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.col2{
+    text-align: center;
+}
+.col2 h4{
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col2 li{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.col3{
+    text-align: left;
+}
+.col3 h4{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col3 i{
+    font-size: 28px;
+    margin-right: 5px;
+    color: #bc9401;
+}
+.col3 p{
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 14px;
+    color: #bc9401;
+}
+footer .container{
+    border-top: 1px solid #c2271f;
+    padding-top: 20px;
+    border-bottom: 1px solid #c2271f;
+}
+#thing-content div div div{
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-right: 5px; */
+    /* transform: scale(1.5);*/
+    overflow: hidden; 
+    /* padding: 5px; */
+    
+}
+#thing-content div div div img{
+    transition: 1s;
+}
+#thing-content div div div:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#thing-content>div>div{
+    padding: 0px !important;
+}
+.box-text{
+    position: relative;
+    margin-top: 30px;
+}
+.rm-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0px !important;
+    /* display: flex;
+    align-items: center; */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#toggle{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    /* right: 0px;
+    top: 0px; */
+    margin: 0xp auto; 
+    cursor: pointer;
+}
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+.toggle-box{
+    display: none;
+}
+#res-nav{
+    /* display: none; */
+    background-color: #ddd;
+    border-bottom: 4px solid #c2271f;   
+}
+.res-box{
+    color: #808080;
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+#res-nav a li{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+#res-nav a{
+    text-decoration: none;
+}
+#res-nav>ul>li:hover{
+    color: #c2271f;
+}
+.add-res-box{
+    color: #c2271f;
+}
+.remove-res-nav{
+    display: none;
+}
+.res-ct{
+    color: #bc9401;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+.add-res-nav{
+    display: block;
+}
+#res-nav>ul>li{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+/* #res-nav .active{
+    display: block;
+} */
+@media (max-width: 992px){
+    #place, #thing, #gallery{
+        display: none;
+    }
+    .toggle-box{
+        display: block;
+    }
+    /* #res-nav{
+        display: block;
+    } */
+    #thing-nav{
+        display: none;
+    }
+    .travel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #travel-tip .col-lg-2,.col-4 p{
+        margin-top: 20px;
+        
+        margin-bottom: 10px;
+    }
+    
+}
+@media (max-width:700px){
+    .travel img{
+        width: 100% !important;
+    }
+}
+@media (min-width: 992px){
+    #res-nav{
+        display: none;
+    }
+    #res-box{
+        display: none;
+    }
+}
+/* @media (min-width: 768px){
+    .col2, .col2 h4{
+        text-align: left !important;
+    }
+    .col2 h4{
+        text-align: left !important;
+    }
+    .col2{
+        margin-top: 20px;
+    }
+} */
+#res-thing-box{
+    /* width: 80%;
+    margin: 0px auto; */
+    /* height: 20px; */
+    border: 1px solid black;
+    /* position: relative; */
+    color:white;
+    background-color: #c2271f;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#res-box{
+    width: 80%;
+    margin: 0px auto;
+}
+#res-thing{
+    background-color: #ddd;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#res-thing div:hover{
+    color: white;
+    background-color:#c2271f ;
+    transition: 0.5s;
+}

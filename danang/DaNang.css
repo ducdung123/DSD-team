@@ -1,0 +1,370 @@
+/* *{
+    margin : 0;
+    padding: 0;
+}
+h2{
+    color: #848484;
+}
+h3{
+    color: #9e0b0f;
+}  
+.nenAnh{
+    position: relative;
+   padding: 0px;
+   z-index: 3;
+}
+.nenChu{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 340px;
+    padding: 20px 10px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    font-size: 20px;
+    font-weight: bold;
+}
+.nenChu1{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 360px;
+    padding: 20px 10px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    font-size: 20px;
+    font-weight: bold;
+}
+.hieuUng{
+    z-index: 2;
+}
+.hieuUng:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.5s;
+}
+.anhNen{
+    height: 540px;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-item img{
+    height: 540px;
+    width: 100%;
+    object-fit: cover;
+} */
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    position: relative; 
+    
+}
+li{
+    list-style: none;
+}
+#overview{
+    width: 50%;
+    position: relative;
+    margin: 20px auto 0px auto;
+    /* background-color: #eeeeee; */
+}
+.desc h4{
+    color: #8e8a93;
+    font-size: 23px;
+    /* font-stretch: extra-expanded ; */
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.desc img{
+    width: 100%;
+    /* margin: 20px auto;
+    display: block; */
+}
+.desc h5{
+    color: #9e0b0f;
+    margin: 30px 0px;
+    font-size: 21px;
+}
+.desc p{
+    font-size: 18px;
+}
+#itineraries h5{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
+}
+.desc i{
+    font-weight: bold;
+    font-size: 25px;
+    color: #9e0b0f;
+}
+#itineraries h4{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#climate h5{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
+}
+#climate h4{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#transport h5{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
+}
+#transport h4{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.icon{
+    position: absolute;
+    right: 700px;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    font-size: 25px;
+    
+}
+.icon span{
+    display: none;
+    font-size: 15px;
+}
+.icon div{
+    border: 1px solid #9e0b0f;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding: 3px;
+    transition: 0.5s;
+}
+.icon a{
+    color: #9e0b0f;
+}
+.icon div:hover {
+    border: white;
+    background-color: #9e0b0f;
+    transition: 0.5s;
+}
+.icon a:hover{
+    color: white;
+    transition: ease-in-out;
+}
+#gallery{
+    /* background-image: url("anhhanoi.jpg");
+    background-size: cover;
+    background-repeat: none; */
+}
+.backgr-gal{
+    background-image: url("anhhanoi.jpg");
+    background-size: cover;
+    background-repeat: none;
+}
+#gallery img{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+.img50 {
+    display: flex;
+    width: 50%;
+}
+footer{
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.col1{
+    text-align: left;
+}
+.col1 h4{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col1 p{
+    color: #bc9401;
+    font-size: 15px;
+}
+.col1 input{
+    padding: 5px;
+    width: 100%;
+    display: block;
+    color: #bc9401;
+}
+.col1 button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    background-color: #c2271f;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.col2{
+    text-align: center;
+}
+.col2 h4{
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col2 li{
+    font-weight: lighter;
+    font-size: 15px;
+}
+.col3{
+    text-align: left;
+}
+.col3 h4{
+    text-align: left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #bc9401;
+}
+.col3 i{
+    font-size: 28px;
+    margin-right: 5px;
+    color: #bc9401;
+}
+.col3 p{
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 14px;
+    color: #bc9401;
+}
+footer .container{
+    border-top: 1px solid #c2271f;
+    padding-top: 20px;
+    border-bottom: 1px solid #c2271f;
+}
+.nav-link{
+    text-transform: uppercase;
+    padding: 10px 0px;
+    margin-right: 40px;
+}
+.navbar{
+    padding-left: 50px;
+}
+.nav-item .active{
+    color:#c2271f;
+    border-bottom: 3px solid #c2271f;
+}
+.nav-item:hover .nav-link{
+    border-bottom: 3px solid #c2271f;
+    transition: 0.3s;
+}
+.navadd{
+    color:#c2271f;
+    border-bottom: 3px solid #c2271f;
+}
+.navremove{
+    color: black;
+}
+#also-like{
+    background-color: #ebebeb;
+    padding-bottom: 60px;
+}
+#also-like div div div{
+    margin-right: 30px;
+    margin-left: 30px;
+    /* margin-right: 5px; */
+    /* transform: scale(1.5);*/
+    overflow: hidden; 
+    /* padding: 5px; */
+    
+}
+#also-like div div div img{
+    transition: 1s;
+}
+#also-like div div div:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#also-like>div>div{
+    padding: 0px !important;
+}
+#read-more{
+    background-image: url("https://vietnam.travel/themes/custom/vietnamtourism/images/bg-red-pattern.png");
+    
+    /* height: 600px; */
+    width: 100%;
+    padding: 10px;
+}
+#read-more>div{
+    /* margin: 10px; */
+    /* margin-top: 20px; */
+    border: 2px solid #f3b502;
+    
+}
+#read-more div h2{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#read-more .img-read{
+    /* padding: 0px; */
+}
+#read-more div div div div img{
+    transition: 1s;
+}
+#read-more div div div div:hover img{
+    transform: scale(1.1);
+    transition: 1s;
+}
+#read-more>div>div>div>div{
+    padding: 0px !important;
+}
+#read-more div div div div div{
+    margin-right: 10px;
+    margin-left: 10px;
+    /* margin-right: 5px; */
+    /* transform: scale(1.5);*/
+    overflow: hidden; 
+    /* padding: 5px; */
+    
+}
+.box-text{
+    position: relative;
+}
+.rm-text{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    margin: 0px !important;
+    /* display: flex;
+    align-items: center; */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div id="divheader">
+        <header>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-2"><img id="logo" src="logo.jpg" alt=""></div>
+                    <div class="col-10">
+                        <div class="row justify-content-end align-items-center" id="fix-navbar">
+                            <div class="col-2" id="place"><a href="#placetogo" style="color: white;"><i
+                                        class="fas fa-map-marked-alt" id="icon"></i>Place to go<i
+                                        class="fas fa-chevron-down" id="down"></i></a>
+                                <div id="placepic" class="container placepic1">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p>Northern Vietnam</p>
+                                            <div><img style="width: 100%;" src="anhhanoi.jpg" alt=""></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>Central Vietnam</p>
+                                            <div><img style="width: 100%;" src="anhdanang.jpg" alt=""></div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <p>Southern Vietnam</p>
+                                            <div><img style="width: 100%;" src="anhsaigon.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-2" id="thing"><a href="#thing-to-do" style="color: white;"><i
+                                        class="fas fa-caravan" id="icon"></i>Thing to do<i class="fas fa-chevron-down"
+                                        id="down"></i></a>
+                                <div class="container thingpic1" id="thingpic">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <p>Food</p>
+                                            <div><img style="width: 100%;" src="food.jpg" alt=""></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>Nature</p>
+                                            <div><img style="width: 100%;" src="nature.jpg" alt=""></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>Culture</p>
+                                            <div><img style="width: 100%;" src="culture.jpg" alt=""></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p>Cities</p>
+                                            <div><img style="width: 100%; height: 100%; display: block;" src="city.jpg"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2" id="gallery"><a href="#gal" style="color: white; "><i
+                                        class="fas fa-images" id="icon"></i>Gallery</a>
+                            </div>
+                            <div onclick="search()" id="i-search" class="col-1"
+                                style="color: white; font-size: 15px; cursor: pointer;">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col-6 col-lg-4 i-search2" id="nav-search">
+                                <form class="form-inline my-2 my-lg-0 row justify-content-end">
+                                    <input id="search-value" style="height: 30px;" class="form-control mr-sm-2"
+                                        type="search" placeholder="Search" aria-label="Search">
+                                    <button onclick="submit()" id="search" class="btn btn-outline-success my-2 my-sm-0"
+                                        type="submit">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-1 toggle-box">
+                                <div href="" id="toggle">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a href="" class="toggle">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="res-nav" class="remove-res-nav">
+            <ul>
+                <li class="res-box" id="res-pl-box" style="position: relative; cursor: pointer;">Places to go<i
+                        style="position: absolute; right: 10px; " class="fas fa-chevron-down"></i></li>
+
+                <a href="hanoi/hanoi.html" target="_blank">
+                    <li id="res-pl-1" class="remove-res-nav res-ct">NORTHERN VIETNAM</li>
+                </a>
+                <a href="danang/DaNang.html" target="_blank">
+                    <li id="res-pl-2" class="remove-res-nav res-ct">CENTRAL VIETNAM</li>
+                </a>
+                <a href="hochiminh/hochiminhcity.html" target="_blank">
+                    <li id="res-pl-3" class="remove-res-nav res-ct">SOUTHERN VIETNAM</li>
+                </a>
+
+
+                <li class="res-box" id="res-th-box" style="position: relative; cursor: pointer;">Thing to do<i
+                        style="position: absolute; right: 10px; " class="fas fa-chevron-down"></i></li>
+
+                <a href="food1/food1.html" target="_blank">
+                    <li id="res-th-1" class="remove-res-nav res-ct">FOOD</li>
+                </a>
+                <a href="" target="_blank">
+                    <li id="res-th-2" class="remove-res-nav res-ct">NATURE</li>
+                </a>
+                <a href="" target="_blank">
+                    <li id="res-th-3" class="remove-res-nav res-ct">CULTURE</li>
+                </a>
+                <a href="" target="_blank">
+                    <li id="res-th-4" class="remove-res-nav res-ct">CITY</li>
+                </a>
+
+
+                <li class="res-box" style="cursor: pointer;">Gallery</li>
+            </ul>
+        </div>
+    </div>
+    <div id="placetogo">
+        <div id="container-place">
+            <h2>will you go ?</h2>
+            <h4>Discover the highlights of travelling Vietnam and find ideas for your holidays</h4>
+            <div class="container ctn-content">
+                <div class="row">
+                    <div class="col-lg-4 contentpic">
+                        <a href="hanoi/hanoi.html" target="_blank"><img style="width: 100%;" src="contenthanoi.jpg"
+                                alt=""></a>
+                        <div>ha noi</div>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>Founded over 1000 years ago, Vietnam’s capital city is rich in history, with the streets of
+                            its rambling Old Quarter dating back to the 14th century. Wandering these tree-lined lanes
+                            past crumbling colonial facades will transport you back in time. However, today's Hanoi is
+                            about much more than the past. The ancient city is being invigorated with modern cafes,
+                            world-class restaurants, and cool art galleries. When the sun goes down, you have your pick
+                            of watering holes, from sophisticated rooftop bars to buzzing bia hoi.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sparate"></div>
+            <div class="container ctn-content">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p>With broad beaches, fantastic street food, the fabled Hai Van Pass, and a growing collection
+                            of cafes, restaurants, and bars, it’s no wonder the residents of Da Nang sport some of the
+                            broadest smiles in the country. Da Nang is a true beach city. The warm sands of My Khe Beach
+                            sweep south from the mountainous Son Tra Peninsula. Da Nang hosts some of Vietnam's top
+                            luxury resorts, but much of the beach still belongs to the people who make it their
+                            playground, gym, and source of livelihood.</p>
+                    </div>
+                    <div class="col-lg-4 contentpic">
+                        <a href="danang/DaNang.html" target="_blank"><img style="width: 100%;" src="contentdanang.jpg"
+                                alt=""></a>
+                        <div>da nang</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sparate"></div>
+            <div class="container ctn-content">
+                <div class="row">
+                    <div class="col-lg-4 contentpic">
+                        <a href="hochiminh/hochiminhcity.html" target="_blank"><img style="width: 100%;"
+                                src="contenthcm.jpg" alt=""></a>
+                        <div>TP ho chi minh</div>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>Vibrating with energy, innovation and traffic – lots of traffic – Ho Chi Minh City, formerly
+                            known as Saigon, is the economic heart of Vietnam and the main hub of the southern region. A
+                            freewheeling, cosmopolitan metropolis, HCMC's dynamic cityscape draws together old and new
+                            Vietnam in the most compact of spaces, representing the city’s past as well as its future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="thing-to-do">
+        <div>
+            <h2>GET INSPIRED</h2>
+            <div id="thing-nav">
+                <nav class="nav  nav-justified">
+
+                    <div onclick="allthing()" id="thing-1" class="nav-item nav-link active remove-click">All</div>
+                    <div onclick="food()" id="thing-2" class="nav-item nav-link remove-click">Food</div>
+                    <div onclick="nature()" id="thing-3" class="nav-item nav-link remove-click">Nature</div>
+                    <div onclick="culture()" id="thing-4" class="nav-item nav-link remove-click">Culture</div>
+                    <div onclick="city()" id="thing-5" class="nav-item nav-link remove-click">Citys</div>
+                </nav>
+            </div>
+            <!-- <select name="" id="" style="width: 80%; margin: 0px auto; display: flex;" >
+                <option value="">as</option>
+                <option  value=""><div onclick="food()" id="op-food">asdad</div></option>
+                <option value="">as</option>
+                <option value="">as</option>
+                <option value="">as</option>
+                
+            </select> -->
+            <div id="res-box" style="position: relative;">
+                <div id="res-thing-box">ALL</div>
+                <i class="fas fa-caret-down"
+                    style="position: absolute;top: 5px; right: 10px; font-size: 22px; color: white; cursor: pointer;"></i>
+                <div id="res-thing" class="i-search2">
+                    <div onclick="allthing()">ALL</div>
+                    <div onclick="food()">FOOD</div>
+                    <div onclick="nature()">NATURE</div>
+                    <div onclick="culture()">CULTURE</div>
+                    <div onclick="city()">CITY</div>
+                </div>
+            </div>
+
+            <div id="thing-content">
+                <div class="row ">
+                    <div class="col-lg-4">
+                        <div class="box-text">
+                            <a id="link-1" href="food1/food1.html" target="_blank"><img id="anh1" style="height: 250px; width: 100%;"
+                                    src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2020-06/Banh%20mi%20in%20Vietnam.jpg?itok=R1uOIwdj"
+                                    alt=""></a>
+                            <div class="rm-text">
+                                <p id="text1">7 superb banh mi to try in Vietnam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box-text">
+                            <a id="link-2" href="nature1/nature1.html" target="_blank"><img id="anh2"
+                                    style="height: 250px; width: 100%;"
+                                    src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-08/sustainable%20hotels%20vietnam_0.jpg?itok=ZPxVpWGa"
+                                    alt=""></a>
+                            <div class="rm-text">
+                                <p id="text2">The best sustainable stays in VietNam</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box-text">
+                            <a id="link-3" href="culture1/culture1.html" target="_blank"><img id="anh3"
+                                    style="height: 250px; width: 100%;"
+                                    src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-08/Best%20responsible%20tours%20Vietam.jpg?itok=35mIosI6"
+                                    alt=""></a>
+                            <div class="rm-text">
+                                <p id="text3">Explore and embrace: Vietnam’s green tours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="gal">
+        <div class="container-fluid">
+            <div class="row flex-column ">
+                <div class="row ">
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Vietnamese%20sandwich-4.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/What%20to%20do%20in%20Dalat-6.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Vietnamese%20iced%20coffee%20recipe.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Vietnam%20travel%20ideas%202020.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Guide%20to%20Vietnam%27s%20crafts_-3.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Guide%20to%20adventures%20in%20Con%20Dao-2_0.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-2 col-6">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Ninh%20Binh.jpg" alt="">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/dalat%20inside%20guide-4.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <img src="https://nemtv.vn/wp-content/uploads/2019/02/hinh-anh-lang-bac-nemtv-04.jpg" alt="">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Things%20to%20do%20in%20Cai%20Be%20in%20the%20Mekong%20Delta-6.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Best%20islands%20to%20visit%20-%20Vietnam%20Tourism-9.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Best%20getaways%20for%20couples%20vietnam%20travel-3.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/what%20to%20eat%20HCMC%20Vietnam%20Travel-3.JPG"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Can%20Tho%20Mekong%20Delta.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/Greg%20Norman%20in%20Old%20Quarter.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/guide%20to%20phu%20quoc-10.jpg"
+                            alt="">
+                    </div>
+                    <div class="col-lg-2 col-4">
+                        <img src="https://www.vietnam.travel/sites/default/files/inline-images/bun%20bo%20Hue%20recipe_0.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="travel-tip">
+        <h2>TRAVEL TIPS</h2>
+        <p>Prepare for your trip with these practical articles</p>
+        <div class="row justify-content-center travel">
+            <div class="col-lg-2 col-4">
+                <img style="width: 60%; height: 80px;"
+                    src="https://www.vietnam.travel/sites/default/files/2019-11/Visas_1.jpg" alt="">
+                <p>visas</p>
+            </div>
+            <div class="col-lg-2 col-4">
+                <img style="width: 60%; height: 80px;"
+                    src="https://www.vietnam.travel/sites/default/files/2019-11/Transport_1.jpg" alt="">
+                <p>transports</p>
+            </div>
+            <div class="col-lg-2 col-4">
+                <img style="width: 60%; height: 80px;"
+                    src="https://www.vietnam.travel/sites/default/files/2019-11/Weather%20white_1.jpg" alt="">
+                <p>weather</p>
+            </div>
+            <div class="col-lg-2 col-4">
+                <img style="width: 60%; height: 80px;"
+                    src="https://www.vietnam.travel/sites/default/files/2019-11/Health%20and%20Safety_0.jpg" alt="">
+                <p>safety</p>
+            </div>
+            <div class="col-lg-2 col-4">
+                <img style="width: 60%; height: 80px;"
+                    src="https://www.vietnam.travel/sites/default/files/2019-11/History%20white_0.jpg" alt="">
+                <p>history</p>
+            </div>
+        </div>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-06/Virtual%20Vietnam%20Travel-4_0.JPG?itok=1PF4dL4R"
+                    alt="Los Angeles" style="width: 100%;" height="600">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-05/Vietnamese%20food%20recipes-1.jpg?itok=-7Gqvq77"
+                    alt="Chicago" style="width: 100%;" height="600">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-07/Vietnam%20tourism%20360%20tours-5_0.jpg?itok=JSEvlfNk"
+                    alt="New York" style="width: 100%;" height="600">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-08/sustainable%20hotels%20vietnam_0.jpg?itok=ZPxVpWGa"
+                    alt="New York" style="width: 100%;" height="600">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-08/Solo%20travel%20in%20Vietnam-2.jpg?itok=PlszuGgf"
+                    alt="New York" style="width: 100%;" height="600">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col1 flex-column">
+                    <h4>SIGN UP FOR OUR NEWSLETTER</h4>
+                    <p>Receive new travel stories from Vietnam once a month in your inbox.
+                    </p>
+                    <input type="email" placeholder="your email">
+                    <button>sign up</button>
+                </div>
+                <div class="col-md-4 col2 flex-column">
+                    <h4>USEFUL LINKS</h4>
+                    <ol>
+                        <li>Stay at Home Kit</li>
+                        <li>Visas for Vietnam</li>
+                        <li>Beginner Guide</li>
+                        <li>FAQs</li>
+                        <li>Sitemap</li>
+                        <li>News & Media</li>
+                        <li>Industry Resources</li>
+
+                    </ol>
+                </div>
+                <div class="col-md-4 col3 flex-column">
+                    <h4>FOLLOW US ON</h4>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <p>Welcome to the official website of Vietnam National Administration of Tourism. Visit our social
+                        media pages for more travel inspiration.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
