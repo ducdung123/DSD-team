@@ -15,12 +15,15 @@ a{
 }
 #divheader{
     background-image: url(https://chuyenbatam.com/uploads/news/nhung-buc-anh-thien-nhien-tuyet-dep-trai-dai-khap-3-mien-viet-nam201976102745.jpg);
-    height: 797px;
+    min-height: 797px;
     /* height: auto; */
     width: 100%;
-   background-attachment: fixed;
+    
+    background-attachment: fixed;
     background-repeat: no-repeat; 
     background-size: cover;
+    z-index: 99999;
+    
     /* background-attachment: fixed; */
     /* z-index: 1; */
     /* display: fixed; */
@@ -131,7 +134,17 @@ header{
 }
 #gallery{
     text-align: center;
+    
 }
+/* #gallery:hover #text-gal{
+    color:   #a2140d !important;
+    transition: 0.3s;
+} */
+/* #gallery:hover{
+    background-color: #ddd;
+    transition: 0.3s;
+} */
+
 #down{
     display: none;
 }
@@ -447,17 +460,20 @@ footer .container{
 #res-nav{
     /* display: none; */
     background-color: #ddd;
-    border-bottom: 4px solid #c2271f;   
+    border-bottom: 4px solid #c2271f;  
+    z-index: 99999 !important; 
 }
 .res-box{
     color: #808080;
     /* text-transform: uppercase; */
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
+    z-index: 99999 !important;
 }
 #res-nav a li{
     border-bottom: 1px solid black;
     padding: 10px;
+    z-index: 99999 !important;
 }
 #res-nav a{
     text-decoration: none;
@@ -520,10 +536,19 @@ footer .container{
     #logo{
         height: 70px;
     }
+    #divheader{
+        min-height: 500px;
+
+        /* width: auto !important; */
+    }
 }
 @media (max-width: 500px){
     #logo{
         height: 50px;
+    }
+    #divheader{
+        min-height: 300px !important;
+        /* width: auto !important; */
     }
 }
 @media (min-width: 992px){

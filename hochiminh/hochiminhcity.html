@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="hcmct.css">
-    <title>Document</title>
+    <title>Ho Chi Minh </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <style>
@@ -33,15 +36,28 @@
                 <a onclick="gallery()" id="nav2" class="nav-link navremove" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-                <a onclick="alsolike()" id="nav3" class="nav-link navremove" href="#">You may also like</a>
+                <a onclick="alsolike()" id="nav3" class="nav-link navremove" href="#also-like">You may also like</a>
             </li>
             <li class="nav-item">
-                <a onclick="nearplace()" id="nav4" class="nav-link navremove" href="#" tabindex="-1"
+                <a onclick="nearplace()" id="nav4" class="nav-link navremove" href="#read-more" tabindex="-1"
                     aria-disabled="true">Nearby
                     places</a>
             </li>
         </ul>
     </nav>
+    <div class="dropdown sticky-top" id="res-drop">
+        <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="display: none;">
+            Overview
+
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a onclick="overview()" class="dropdown-item" href="#overview">Overview</a>
+            <a onclick="gallery()" class="dropdown-item" href="#gallery">Gallery</a>
+            <a onclick="alsolike()" class="dropdown-item" href="#also-like">You may also like</a>
+            <a onclick="nearplace()" class="dropdown-item" href="#read-more">Nearby</a>
+        </div>
+    </div>
     <div id="overview">
         <div class="icon">
             <div><span>Itineraries</span><a href="#itineraries"><i class="fas fa-map-marker-alt"></i></a></div>
@@ -276,37 +292,46 @@
     <div id="also-like">
         <h4 style="color:goldenrod; text-align: center; padding-top: 40px; margin-bottom: 30px; font-size: 35px;">
             <strong>YOU MAY ALSO LIKE</strong></h4>
-        <div class="row" style="margin-right: 20px; margin-left: 20px; ">
-            <div class="col-4" style="padding: 0px;">
-                <div>
-                    <a href=""><img style="width: 100%;"
-                            src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
-                            alt=""></a>
+            <div class="row" style="margin-right: 20px; margin-left: 20px; ">
+                <div class="col-md-4 flex-column" style="padding: 0px; margin-bottom: 20px">
+                    <div class="box-text">
+                        <a href="../food2/food2.html"><img style="width: 100%;"
+                                src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2020-05/Vietnamese%20food%20recipes-1.jpg?itok=-7Gqvq77j"
+                                alt=""></a>
+                        <div class="rm-text">
+                            <p>5 Vietnamese recipes to try at home</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 flex-column" style="padding: 0px; margin-bottom: 20px">
+                    <div class="box-text">
+                        <a href="../city2/city2.html"><img style="width: 100%;"
+                                src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2018-12/top%20rooftop%20bars%20asia.jpg?itok=vxp4nWo0"
+                                alt=""></a>
+                        <div class="rm-text">
+                            <p>9 stunning rooftop bars</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 flex-column" style="padding: 0px; margin-bottom: 20px">
+                    <div class="box-text">
+                        <a href="../nature2/nature2.html"><img style="width: 100%; "
+                                src="https://www.vietnam.travel/sites/default/files/styles/top_banner/public/2020-07/Hanoi%20daytrips.jpg?itok=qN5xh58E"
+                                alt=""></a>
+                        <div class="rm-text">
+                            <p>5 day trip destinations from HaNoi</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-4" style="padding: 0px;">
-                <div>
-                    <a href=""><img style="width: 100%;"
-                            src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
-                            alt=""></a>
-                </div>
-            </div>
-            <div class="col-4" style="padding: 0px;">
-                <div>
-                    <a href=""><img style="width: 100%;"
-                            src="https://vietnam.travel/sites/default/files/styles/reference_thumbnail/public/2018-11/Attractions%20Hanoi%20Vietnam%20Tourism%20Banner.jpg?itok=xD-sVGPG"
-                            alt=""></a>
-                </div>
-            </div>
-        </div>
     </div>
     <div id="read-more">
         <div>
             <h2>Nearby places</h2>
             <div class="container" style="margin-bottom: 60px; ;">
                 <div class="row">
-                    <div class="col-4 img-read">
-                        <div class="box-text"><a href="../hanoi/hanoi.html"><img
+                    <div class="col-md-4 flex-column img-read" style="margin-bottom: 20px">
+                        <div class="box-text"><a href="hanoi.html"><img
                                     src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty"
                                     alt="" style="width: 100%; height: 360px;"></a>
                             <div class="rm-text">
@@ -314,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 img-read">
+                    <div class="col-md-4 flex-column img-read" style="margin-bottom: 20px">
                         <div class="box-text"><a href="../danang/DaNang.html"><img
                                     src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2018-10/danang%20travel%20guide.jpg?itok=BnNpkujX"
                                     alt="" style="width: 100%; height: 360px;"></a>
@@ -323,7 +348,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4 img-read">
+                    <div class="col-md-4 flex-column img-read" style="margin-bottom: 20px">
                         <div class="box-text"><a href="../hochiminh/hochiminhcity.html"><img
                                     src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-07/vietnam-tourism-4.jpg?itok=pn9rKMK7"
                                     alt="" style="width: 100%; height: 360px;"></a>
@@ -341,14 +366,14 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-4 col1">
+                <div class="col-md-4 col1 flex-column">
                     <h4>SIGN UP FOR OUR NEWSLETTER</h4>
                     <p>Receive new travel stories from Vietnam once a month in your inbox.
                     </p>
                     <input type="email" placeholder="your email">
                     <button>sign up</button>
                 </div>
-                <div class="col-4 col2">
+                <div class="col-md-4 col2 flex-column">
                     <h4>USEFUL LINKS</h4>
                     <ol>
                         <li>Stay at Home Kit</li>
@@ -361,7 +386,7 @@
 
                     </ol>
                 </div>
-                <div class="col-4 col3">
+                <div class="col-md-4 col3 flex-column">
                     <h4>FOLLOW US ON</h4>
                     <i class="fab fa-facebook"></i>
                     <i class="fab fa-youtube"></i>

@@ -5,6 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     position: relative; 
@@ -309,4 +310,72 @@ footer .container{
     font-weight: bold;
     padding-top: 10px;
     padding-left: 10px;
+}
+#res-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#dropdownMenuButton{
+    width: 80%;
+    text-align: left;
+    border: 1px solid black;
+    color:white;
+    background-color: #c2271f;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 5px;
+}
+.dropdown-menu{
+    background-color: #ddd;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 79%;
+}
+.dropdown-item:hover{
+    color: white;
+    background-color:#c2271f ;
+    transition: 0.5s;
+}
+@media(max-width: 1000px){
+    #dropdownMenuButton{
+        display: block !important;
+    }
+    .icon{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    #overview{
+        width: 80%;
+    }
+}
+@media (max-width: 650px){
+    #overview{
+        width: 90%;
+    }
+}
+@media (max-width: 768px){
+    .col2, .col2 h4{
+        text-align: left !important;
+    }
+    .col2 h4{
+        text-align: left !important;
+    }
+    .col2{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 400px){
+    #also-like img{
+        height: 150px !important;
+    }
+    #read-more img{
+        height: 180px !important;
+    }
 }

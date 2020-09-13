@@ -72,7 +72,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2" id="gallery"><a href="#gal" style="color: white; "><i
+                            <div class="col-2" id="gallery"><a href="#gal" id="text-gal" style="color: white; "><i
                                         class="fas fa-images" id="icon"></i>Gallery</a>
                             </div>
                             <div onclick="search()" id="i-search" class="col-1"
@@ -106,7 +106,7 @@
                 </div>
             </div>
         </header>
-        <div id="res-nav" class="remove-res-nav">
+        <div id="res-nav" class="remove-res-nav "  >
             <ul>
                 <li class="res-box" id="res-pl-box" style="position: relative; cursor: pointer;">Places to go<i
                         style="position: absolute; right: 10px; " class="fas fa-chevron-down"></i></li>
@@ -125,16 +125,16 @@
                 <li class="res-box" id="res-th-box" style="position: relative; cursor: pointer;">Thing to do<i
                         style="position: absolute; right: 10px; " class="fas fa-chevron-down"></i></li>
 
-                <a href="food1/food1.html" target="_blank">
+                <a href="#thing-to-do" >
                     <li id="res-th-1" class="remove-res-nav res-ct">FOOD</li>
                 </a>
-                <a href="" target="_blank">
+                <a href="#thing-to-do" >
                     <li id="res-th-2" class="remove-res-nav res-ct">NATURE</li>
                 </a>
-                <a href="" target="_blank">
+                <a href="#thing-to-do" >
                     <li id="res-th-3" class="remove-res-nav res-ct">CULTURE</li>
                 </a>
-                <a href="" target="_blank">
+                <a href="#thing-to-do" >
                     <li id="res-th-4" class="remove-res-nav res-ct">CITY</li>
                 </a>
 
@@ -143,7 +143,7 @@
             </ul>
         </div>
     </div>
-    <div id="placetogo">
+    <div id="placetogo" style="z-index: 2 !important;">
         <div id="container-place">
             <h2>will you go ?</h2>
             <h4>Discover the highlights of travelling Vietnam and find ideas for your holidays</h4>
@@ -222,7 +222,7 @@
                 <option value="">as</option>
                 
             </select> -->
-            <div id="res-box" style="position: relative;">
+            <div id="res-box" style="position: relative;"  >
                 <div id="res-thing-box">ALL</div>
                 <i class="fas fa-caret-down"
                     style="position: absolute;top: 5px; right: 10px; font-size: 22px; color: white; cursor: pointer;"></i>
